@@ -11,6 +11,8 @@ public class MovementController : MonoBehaviour
     [SerializeField] private Vector3 movementDirection;
 
     [Header("Movement")]
+
+    public bool PlayerisCrafting = false;
     [SerializeField] private float playerSpeed = 5f;
     [SerializeField] private float rotationSpeed = 10f;
     [SerializeField] private float jumpForce = 10f;
@@ -20,8 +22,9 @@ public class MovementController : MonoBehaviour
 
     [Header("Camera")]
     [SerializeField] private Camera followCamera;
+    public GameObject mainCamera;
+    public GameObject craftingCamera;
 
-    public float rotation;
     [Header("GameObjects")]
     public CharacterController controller;
 
@@ -37,11 +40,22 @@ public class MovementController : MonoBehaviour
     void Update()
     {
         Jump();
+        if (PlayerInputMap.actions["Craft"].WasPressedThisFrame())
+        {
+            PlayerisCrafting = !PlayerisCrafting;
+            UpdateCamera();
+        }
     }
     private void FixedUpdate()
     {
-        // Handle player movement
-        HandleMovement();
+
+
+        // Handle player movement if not crafting
+        if (!PlayerisCrafting)
+        {
+            HandleMovement();
+        }
+
     }
     private void HandleMovement()
     {
@@ -54,7 +68,7 @@ public class MovementController : MonoBehaviour
         // Apply gravity
         Gravity();
     }
-       private void BasicMovement()
+    private void BasicMovement()
     {
         GetMovementSpeed();
         // Manage player input
@@ -66,9 +80,14 @@ public class MovementController : MonoBehaviour
         if (movementDirection != Vector3.zero)
         {
             Quaternion desiredRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
-            transform.rotation = Quaternion.Slerp(transform.rotation,desiredRotation, rotationSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, desiredRotation, rotationSpeed * Time.deltaTime);
         }
         controller.Move(movementDirection * playerSpeed * Time.deltaTime);
+
+        if (PlayerInputMap.actions["Craft"].WasReleasedThisFrame())
+        {
+            PlayerisCrafting = true;
+        }
     }
 
     float GetMovementSpeed()
@@ -77,6 +96,19 @@ public class MovementController : MonoBehaviour
         float MovementSpeed;
         MovementSpeed = Mathf.Abs(movementInput.x) + Mathf.Abs(movementInput.y);
         return MovementSpeed;
+    }
+    private void UpdateCamera()
+    {
+        if (PlayerisCrafting)
+        {
+            mainCamera.SetActive(false);
+            craftingCamera.SetActive(true);
+        }
+        else
+        {
+            mainCamera.SetActive(true);
+            craftingCamera.SetActive(false);
+        }
     }
     private void RotatetroughtCamera()
     {
