@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 public class MovementController : MonoBehaviour
 {
     [Header("InputManager")]
-    [SerializeField] private Vector3 movementInput3D;
     [SerializeField] private Vector3 movementInputWorldSpace;
     [SerializeField] private Vector3 movementDirection;
 

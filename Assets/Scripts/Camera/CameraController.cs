@@ -6,10 +6,7 @@ using UnityEngine.InputSystem;
 public class CameraController : MonoBehaviour
 {
     public float movementSpeed;
-    public float movementTime;
-
     public PlayerInput PlayerInputMap;
-
     public Vector3 newPosition;
     public Vector3 CamOffset;
 

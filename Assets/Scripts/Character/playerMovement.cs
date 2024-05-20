@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public static Vector3 currentTilePosition;
-    public LayerMask tileLayerMask; // Asegúrate de asignar la capa de los tiles en el inspector
-
+    public LayerMask tileLayerMask; 
+    // Asegúrate de asignar la capa de los tiles en el inspector
     // Variable para almacenar la información del Raycast
     private RaycastHit hit;
     public float RayDistance = 2;

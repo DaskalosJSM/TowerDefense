@@ -9,7 +9,6 @@ public class HexGrid : MonoBehaviour
     public List<GameObject> tilePrefabs;
     public bool isFlattopped;
     public float value;
-
     private float radius;
    
     private void OnEnable()
