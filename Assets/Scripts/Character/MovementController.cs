@@ -12,7 +12,6 @@ public class MovementController : MonoBehaviour
 
     [Header("Movement")]
     [SerializeField] private float playerSpeed = 5f;
-    [SerializeField] private float sprintSpeed = 8f;
     [SerializeField] private float rotationSpeed = 10f;
     [SerializeField] private float jumpForce = 10f;
     public float gravityValue = -9.81f;
@@ -47,7 +46,7 @@ public class MovementController : MonoBehaviour
     private void HandleMovement()
     {
         // Get player input
-        GettingPlayerInput();
+        BasicMovement();
         // Rotate player towards movement direction
         RotatetroughtCamera();
         // Calculate player movement speed based on input vector
@@ -55,14 +54,28 @@ public class MovementController : MonoBehaviour
         // Apply gravity
         Gravity();
     }
-    private void GettingPlayerInput()
+       private void BasicMovement()
     {
-       
-            movementInput = PlayerInputMap.actions["Move"].ReadValue<Vector2>();
-            movementInput3D = new Vector3(movementInput.x, 0, movementInput.y);
-            movementInputWorldSpace = Quaternion.Euler(0, followCamera.transform.eulerAngles.y, 0) * movementInput3D;
-            movementDirection = movementInputWorldSpace.normalized;
-        
+        // Manage player input
+        Vector3 _movemenInput3D = new Vector3(movementInput.x, 0, movementInput.y);
+        Vector3 _movemenInputWorldSpace = Quaternion.Euler(0, followCamera.transform.eulerAngles.y, 0) * _movemenInput3D;
+        Vector3 movementDirection = _movemenInputWorldSpace;
+
+        // Rotate player towards movement direction
+        if (movementDirection != Vector3.zero)
+        {
+            Quaternion desiredRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+            transform.rotation = Quaternion.Slerp(transform.rotation, desiredRotation, rotationSpeed * Time.deltaTime);
+        }
+        controller.Move(movementDirection * playerSpeed * Time.deltaTime);
+    }
+
+    float GetMovementSpeed()
+    {
+        movementInput = PlayerInputMap.actions["Move"].ReadValue<Vector2>();
+        float MovementSpeed;
+        MovementSpeed = Mathf.Abs(movementInput.x) + Mathf.Abs(movementInput.y);
+        return MovementSpeed;
     }
     private void RotatetroughtCamera()
     {
