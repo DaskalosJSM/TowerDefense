@@ -56,6 +56,7 @@ public class MovementController : MonoBehaviour
     }
        private void BasicMovement()
     {
+        GetMovementSpeed();
         // Manage player input
         Vector3 _movemenInput3D = new Vector3(movementInput.x, 0, movementInput.y);
         Vector3 _movemenInputWorldSpace = Quaternion.Euler(0, followCamera.transform.eulerAngles.y, 0) * _movemenInput3D;
@@ -65,7 +66,7 @@ public class MovementController : MonoBehaviour
         if (movementDirection != Vector3.zero)
         {
             Quaternion desiredRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
-            transform.rotation = Quaternion.Slerp(transform.rotation, desiredRotation, rotationSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation,desiredRotation, rotationSpeed * Time.deltaTime);
         }
         controller.Move(movementDirection * playerSpeed * Time.deltaTime);
     }
@@ -116,7 +117,6 @@ public class MovementController : MonoBehaviour
         {
             jumpCount--;
             playerVelocity.y = Mathf.Sqrt(jumpForce * -2f * gravityValue);
-            playerVelocity.x = -2f;
         }
         if (controller.isGrounded && canJump && PlayerInputMap.actions["Jump"].WasPressedThisFrame())
         {
