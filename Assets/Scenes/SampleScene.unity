@@ -148,7 +148,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235842425}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.000000045391058, z: 0.000000041608466, w: 1}
+  m_LocalRotation: {x: 0.000000029802322, y: 0.00000001461218, z: -0.000000013394495,
+    w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -692,7 +693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070849146}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.023296416, y: -0.0000000111823475, z: 0.000000009780975,
+  m_LocalRotation: {x: -0.023296416, y: 0.000000016702389, z: -0.000000014609244,
     w: 0.9997286}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -825,10 +826,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc640d598ac458a439ef0e9cfb8ed824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
+  movementSpeed: 1
   PlayerInputMap: {fileID: 1132115881}
   newPosition: {x: 0, y: 0, z: 0}
-  CamOffset: {x: 4, y: 12, z: -12}
+  CamOffset: {x: 0, y: 8, z: 0}
+  zoomValue: 8.5
 --- !u!114 &1132115883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1050,10 +1052,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf3b1464c669b44c87717f8152bc049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileLayerMask:
-    serializedVersion: 2
-    m_Bits: 8
-  RayDistance: 2
+  currentTile: {x: 0, y: 0, z: 0}
+  RayDistance: 1
 --- !u!1 &1288940725
 GameObject:
   m_ObjectHideFlags: 3
@@ -1206,7 +1206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540140296}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.046479523, y: 0.000000029203207, z: -0.000000024371293,
+  m_LocalRotation: {x: -0.046479523, y: 0.000000030666406, z: -0.000000025592392,
     w: 0.99891925}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1458,7 +1458,7 @@ MonoBehaviour:
   m_BlendUpdateMethod: 0
   m_DefaultBlend:
     m_Style: 1
-    m_Time: 3
+    m_Time: 1
     m_CustomCurve:
       serializedVersion: 2
       m_Curve: []
@@ -1583,7 +1583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095182431}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.362523, y: -0.000000035432063, z: 0.000000013782493, w: 0.9319748}
+  m_LocalRotation: {x: 0.36252302, y: -0.000000043526036, z: 0.000000016930919, w: 0.9319748}
   m_LocalPosition: {x: 3.24, y: 14.48, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

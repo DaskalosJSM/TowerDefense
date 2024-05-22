@@ -9,6 +9,7 @@ public class CameraController : MonoBehaviour
     public PlayerInput PlayerInputMap;
     public Vector3 newPosition;
     public Vector3 CamOffset;
+    public float zoomValue;
 
     void OnEnable()
     {
@@ -30,7 +31,7 @@ public class CameraController : MonoBehaviour
     {
         if (PlayerMovement.currentTilePosition != Vector3.zero)
         {
-            this.transform.position = PlayerMovement.currentTilePosition + CamOffset;
+            this.transform.position = PlayerMovement.currentTilePosition + (CamOffset + transform.forward * -zoomValue);
             newPosition = transform.position; // Actualiza newPosition para evitar desajustes en HandleMovementInput
         }
     }
