@@ -7,12 +7,14 @@ public class Selectiles : MonoBehaviour
 {
     public Material highlightMaterial;
     public Material selectionMaterial;
+    public GameObject prefab;
 
     private Material originalMaterialHighlight;
     private Material originalMaterialSelection;
     private Transform highlight;
     private Transform selection;
     private RaycastHit raycastHit;
+    
 
     void Update()
     {
@@ -48,6 +50,10 @@ public class Selectiles : MonoBehaviour
                 if (selection != null)
                 {
                     selection.GetComponent<MeshRenderer>().material = originalMaterialSelection;
+
+                    Instantiate(prefab, new Vector3(raycastHit.transform.position.x,
+                    raycastHit.point.y + 0.1f,raycastHit.transform.position.z),
+                    raycastHit.transform.rotation);
                 }
                 selection = raycastHit.transform;
                 if (selection.GetComponent<MeshRenderer>().material != selectionMaterial)
