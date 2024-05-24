@@ -74,5 +74,11 @@ public class Selectiles : MonoBehaviour
         }
 
     }
+    public GameObject ChangePrefab(GameObject PreFabtoChange)
+    {
+        GameObject FinalPrefab;
+        FinalPrefab = PreFabtoChange;
+        return FinalPrefab;
+    }
 
 }

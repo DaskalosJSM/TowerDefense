@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles.uss?fileID=7433441132597879392&amp;guid=c40b98a4633613247a390864f8421b5c&amp;type=3#Styles" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.53); justify-content: center; width: 298px; height: 566px; flex-direction: column; flex-wrap: wrap; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; align-items: flex-start;">
+        <ui:VisualElement name="containerElement1" class="container">
+            <ui:Label tabindex="-1" text="Opción 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" style="-unity-font: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=3cfdafbda1aa38543b13391c7e0956a6&amp;type=3#NotInter-Regular&quot;); background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); align-self: center; font-size: 10px;" />
+            <ui:VisualElement name="Image" style="flex-grow: 1; width: 100px; height: auto; background-color: rgba(188, 58, 58, 0.92); margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px; background-image: url(&quot;project://database/Assets/Sprites/EmptyBackcround.png?fileID=21300000&amp;guid=7501cd2f828607048a68a4d1a1ead763&amp;type=3#EmptyBackcround&quot;);" />
+            <ui:Button text="Select" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ButtonElement1" class="button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="containerElement2" class="container">
+            <ui:Label tabindex="-1" text="Opción 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" style="-unity-font: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=3cfdafbda1aa38543b13391c7e0956a6&amp;type=3#NotInter-Regular&quot;); background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); align-self: center; font-size: 10px;" />
+            <ui:VisualElement name="Image" style="flex-grow: 1; width: 100px; height: auto; background-color: rgba(188, 58, 58, 0.92); margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px; background-image: url(&quot;project://database/Assets/Sprites/EmptyBackcround.png?fileID=21300000&amp;guid=7501cd2f828607048a68a4d1a1ead763&amp;type=3#EmptyBackcround&quot;);" />
+            <ui:Button text="Select" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ButtonElement2" class="button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="containerElement3" class="container">
+            <ui:Label tabindex="-1" text="Opción 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" style="-unity-font: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=3cfdafbda1aa38543b13391c7e0956a6&amp;type=3#NotInter-Regular&quot;); background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); align-self: center; font-size: 10px;" />
+            <ui:VisualElement name="Image" style="flex-grow: 1; width: 100px; height: auto; background-color: rgba(188, 58, 58, 0.92); margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px; background-image: url(&quot;project://database/Assets/Sprites/EmptyBackcround.png?fileID=21300000&amp;guid=7501cd2f828607048a68a4d1a1ead763&amp;type=3#EmptyBackcround&quot;);" />
+            <ui:Button text="Select" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ButtonElement3" class="button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="containerElement4" class="container">
+            <ui:Label tabindex="-1" text="Opción 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" style="-unity-font: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=3cfdafbda1aa38543b13391c7e0956a6&amp;type=3#NotInter-Regular&quot;); background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); align-self: center; font-size: 10px;" />
+            <ui:VisualElement name="Image" style="flex-grow: 1; width: 100px; height: auto; background-color: rgba(188, 58, 58, 0.92); margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px; background-image: url(&quot;project://database/Assets/Sprites/EmptyBackcround.png?fileID=21300000&amp;guid=7501cd2f828607048a68a4d1a1ead763&amp;type=3#EmptyBackcround&quot;);" />
+            <ui:Button text="Select" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ButtonElement4" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Panel" style="flex-grow: 1; height: 424px;" />
+</ui:UXML>

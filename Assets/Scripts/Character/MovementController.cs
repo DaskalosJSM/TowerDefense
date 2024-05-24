@@ -23,6 +23,7 @@ public class MovementController : MonoBehaviour
     [SerializeField] private Camera followCamera;
     public GameObject mainCamera;
     public GameObject craftingCamera;
+    public GameObject craftingMenu;
 
     [Header("GameObjects")]
     public CharacterController controller;
@@ -102,11 +103,13 @@ public class MovementController : MonoBehaviour
         {
             mainCamera.SetActive(false);
             craftingCamera.SetActive(true);
+            craftingMenu.SetActive(true);
         }
         else
         {
             mainCamera.SetActive(true);
             craftingCamera.SetActive(false);
+            craftingMenu.SetActive(false);
         }
     }
     private void RotatetroughtCamera()

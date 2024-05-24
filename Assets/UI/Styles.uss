@@ -1,0 +1,27 @@
+VisualElement {
+}
+
+.button {
+    height: 24px;
+    width: 115px;
+    background-color: rgb(207, 165, 56);
+    -unity-text-outline-color: rgba(255, 255, 255, 0);
+    -unity-text-outline-width: 0.3px;
+    border-left-color: rgba(255, 62, 0, 0.59);
+    border-right-color: rgba(255, 62, 0, 0.59);
+    border-top-color: rgba(255, 62, 0, 0.59);
+    border-bottom-color: rgba(255, 62, 0, 0.59);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    -unity-font-style: normal;
+    -unity-font: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=3cfdafbda1aa38543b13391c7e0956a6&type=3#NotInter-Regular");
+}
+
+.container {
+    margin-right: 8px;
+    margin-bottom: 0;
+    margin-left: 8px;
+    height: 126px;
+}
