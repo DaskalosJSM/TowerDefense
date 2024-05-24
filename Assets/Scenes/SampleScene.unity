@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235842425}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000059604645, y: 0.020862848, z: -0.01912427, w: 0.99959946}
+  m_LocalRotation: {x: -0.000000029802319, y: 0.020862356, z: -0.019123835, w: 0.9995995}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -760,7 +760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070849146}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.02328717, y: 0.02130267, z: -0.018633053, w: 0.9993282}
+  m_LocalRotation: {x: -0.023287117, y: 0.021302193, z: -0.01863262, w: 0.9993282}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1272,8 +1272,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540140296}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.046460927, y: -0.02172926, z: 0.018133998, w: -0.9985191}
-  m_LocalPosition: {x: -0.0000066161156, y: 0.0000025331974, z: 0.0000028014183}
+  m_LocalRotation: {x: -0.046460956, y: 0.021728784, z: -0.018133588, w: 0.9985192}
+  m_LocalPosition: {x: -0.0000034570694, y: 0.0000011026859, z: 0.000001206994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1353,7 +1353,7 @@ Transform:
   m_GameObject: {fileID: 1600718857}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.67896825, y: 0.012989193, z: 0.014169991}
+  m_LocalPosition: {x: -0.6789557, y: 0.0129882395, z: 0.014168985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1514,7 +1514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightMaterial: {fileID: 2100000, guid: dba5998617daeef4f8f39851a0765562, type: 2}
   selectionMaterial: {fileID: 2100000, guid: 90ff1feba6e89bb44bc5804258148ed9, type: 2}
-  prefab: {fileID: 7350167233336368052, guid: c2b1fc6b28a06484da4f85384ca6f802, type: 3}
+  prefab: {fileID: 6948372550034590647, guid: 48a981230cce18a4d8265863b435f654, type: 3}
 --- !u!4 &1606402627
 Transform:
   m_ObjectHideFlags: 0
@@ -1695,8 +1695,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095182431}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.19135435, y: 0.7915668, z: -0.3079065, w: -0.49193412}
-  m_LocalPosition: {x: 55.62963, y: 13, z: -25.536776}
+  m_LocalRotation: {x: 0.35572997, y: -0.17957233, z: 0.06985071, w: 0.91451126}
+  m_LocalPosition: {x: 49.407654, y: 13, z: -41.958992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1715,7 +1715,7 @@ GameObject:
   - component: {fileID: 2145859248}
   - component: {fileID: 2145859247}
   m_Layer: 3
-  m_Name: Test
+  m_Name: HexGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1735,9 +1735,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridSize: {x: 25, y: 50}
   tilePrefabs:
-  - {fileID: 6793358248688735966, guid: f4f6f74fd24679141b5666b198b90041, type: 3}
-  - {fileID: 6793358248688735966, guid: c4344d5996a60d647bfa94b5aa742602, type: 3}
-  - {fileID: 6793358248688735966, guid: df34511584ad36240bb86314708ebfa2, type: 3}
+  - {fileID: 1666839657171592120, guid: 55b4657600a2eff4a8b1a934c2fb25db, type: 3}
+  - {fileID: 3047807106307282474, guid: 1944f12d8b14e2c46ad22242efff5948, type: 3}
+  - {fileID: 2620065035790538764, guid: eba024188758e4e4699d5cfac7e92aa8, type: 3}
+  - {fileID: 3026406852218701621, guid: 0a32aeb5886e57e41af4522a9032db6d, type: 3}
+  - {fileID: 8315805226703511094, guid: c5f0cc8d58170e648b2e86d240cf17cd, type: 3}
+  - {fileID: 7423177844321928357, guid: 71d7573e9dfa9a74b9f9e04aedc8ddc5, type: 3}
+  - {fileID: 8315805226703511094, guid: c5f0cc8d58170e648b2e86d240cf17cd, type: 3}
+  - {fileID: 8315805226703511094, guid: c5f0cc8d58170e648b2e86d240cf17cd, type: 3}
+  - {fileID: 8315805226703511094, guid: c5f0cc8d58170e648b2e86d240cf17cd, type: 3}
+  - {fileID: 7423177844321928357, guid: 71d7573e9dfa9a74b9f9e04aedc8ddc5, type: 3}
+  - {fileID: 1666839657171592120, guid: 55b4657600a2eff4a8b1a934c2fb25db, type: 3}
   isFlattopped: 0
   value: 1.69
 --- !u!4 &2145859248

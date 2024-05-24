@@ -44,7 +44,7 @@ public class HexGrid : MonoBehaviour
                 GameObject randomTilePrefab = tilePrefabs[Random.Range(0, tilePrefabs.Count)];
 
                 // Instanciar el prefab del tile en la posición calculada
-                GameObject tile = Instantiate(randomTilePrefab, position, Quaternion.Euler(-90, 0, 0), transform);                tile.name = $"Hex {x},{y}";
+                GameObject tile = Instantiate(randomTilePrefab, position, Quaternion.Euler(0, 0, 0), transform);                tile.name = $"Hex {x},{y}";
 
             }
         }
