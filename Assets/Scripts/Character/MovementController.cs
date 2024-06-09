@@ -24,10 +24,11 @@ public class MovementController : MonoBehaviour
     public GameObject mainCamera;
     public GameObject craftingCamera;
     public GameObject craftingMenu;
+    
 
     [Header("GameObjects")]
+    public GameObject UISelection;
     public CharacterController controller;
-
     private Vector2 movementInput;
     private Vector3 playerVelocity;
     public PlayerInput PlayerInputMap;
@@ -104,12 +105,14 @@ public class MovementController : MonoBehaviour
             mainCamera.SetActive(false);
             craftingCamera.SetActive(true);
             craftingMenu.SetActive(true);
+            UISelection.SetActive(true);
         }
         else
         {
             mainCamera.SetActive(true);
             craftingCamera.SetActive(false);
             craftingMenu.SetActive(false);
+            UISelection.SetActive(false);
         }
     }
     private void RotatetroughtCamera()

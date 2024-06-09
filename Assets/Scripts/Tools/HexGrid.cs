@@ -44,7 +44,8 @@ public class HexGrid : MonoBehaviour
                 GameObject randomTilePrefab = tilePrefabs[Random.Range(0, tilePrefabs.Count)];
 
                 // Instanciar el prefab del tile en la posición calculada
-                GameObject tile = Instantiate(randomTilePrefab, position, Quaternion.Euler(0, 0, 0), transform);                tile.name = $"Hex {x},{y}";
+                GameObject tile = Instantiate(randomTilePrefab, position, CalculateRotation() , transform);                
+                tile.name = $"Hex {x},{y}";
 
             }
         }
@@ -101,6 +102,20 @@ public class HexGrid : MonoBehaviour
         }
 
         return new Vector3(xPosition, 0, -yPosition);
+    }
+    private Quaternion CalculateRotation()
+    {
+         Quaternion[] posiblesRotaciones = {
+            Quaternion.Euler(0, 0, 0),          // Rotación 1
+            Quaternion.Euler(0, 120, 0),        // Rotación 2
+            Quaternion.Euler(0, 240, 0),        // Rotación 3
+            Quaternion.Euler(0, 60, 0),         // Rotación 4
+            Quaternion.Euler(0, 180, 0),        // Rotación 5
+            Quaternion.Euler(0, 300, 0)         // Rotación 6
+        };
+
+        Quaternion rotacionAleatoria = posiblesRotaciones[Random.Range(0, posiblesRotaciones.Length)];
+        return rotacionAleatoria;
     }
 }
 
