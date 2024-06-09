@@ -150,11 +150,6 @@ public class MovementController : MonoBehaviour
             playerVelocity.y = Mathf.Sqrt(jumpForce * -2f * gravityValue);
             jumpCount--;
         }
-        if (PlayerInputMap.actions["Jump"].WasPressedThisFrame())
-        {
-            jumpCount--;
-            playerVelocity.y = Mathf.Sqrt(jumpForce * -2f * gravityValue);
-        }
         if (controller.isGrounded && canJump && PlayerInputMap.actions["Jump"].WasPressedThisFrame())
         {
             playerVelocity.y = Mathf.Sqrt(jumpForce * -2f * gravityValue);

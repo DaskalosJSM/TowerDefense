@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235842425}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000026077032, y: 0.020863116, z: -0.019124549, w: 0.9995994}
+  m_LocalRotation: {x: -0.000000030733645, y: 0.020863205, z: -0.019124594, w: 0.99959946}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -759,7 +759,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070849146}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.023287091, y: 0.021302983, z: -0.01863332, w: 0.99932814}
+  m_LocalRotation: {x: -0.023287091, y: 0.021303073, z: -0.018633358, w: 0.9993282}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1037,7 +1037,7 @@ MonoBehaviour:
   movementInputWorldSpace: {x: 0, y: 0, z: 0}
   movementDirection: {x: 0, y: 0, z: 0}
   PlayerisCrafting: 0
-  playerSpeed: 10
+  playerSpeed: -5.03
   rotationSpeed: 10
   jumpForce: 1
   gravityValue: -9.81
@@ -1354,7 +1354,7 @@ Transform:
   m_GameObject: {fileID: 1600718857}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.678982, y: 0.012989089, z: 0.014169931}
+  m_LocalPosition: {x: -0.6789844, y: 0.012989871, z: 0.014170796}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1696,8 +1696,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095182431}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.06475341, y: 0.9169872, z: -0.3566931, w: 0.1664682}
-  m_LocalPosition: {x: 40.65209, y: 13, z: -19.615711}
+  m_LocalRotation: {x: -0.047636747, y: 0.92389363, z: -0.35937956, w: -0.12246463}
+  m_LocalPosition: {x: 47.996334, y: 13, z: -19.264404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1783,7 +1783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735fc968c65423e408201981654e0ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridSize: {x: 25, y: 50}
+  gridSize: {x: 20, y: 20}
   tilePrefabs:
   - {fileID: 3437430695640952787, guid: 30d381493bf4cae499eb014e5288597c, type: 3}
   - {fileID: 3866390568954901661, guid: 0a64586be4fe5a74fac02a9fb4da0bba, type: 3}
