@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -148,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235842425}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000008940696, y: 0.020862266, z: -0.019123742, w: 0.9995995}
+  m_LocalRotation: {x: -0.000000029802322, y: 0.020862058, z: -0.01912357, w: 0.9995995}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -760,7 +759,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070849146}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.023287145, y: 0.021302147, z: -0.018632563, w: 0.99932814}
+  m_LocalRotation: {x: -0.023287177, y: 0.02130191, z: -0.018632375, w: 0.9993282}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1273,8 +1272,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540140296}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.046460956, y: 0.02172874, z: -0.01813354, w: 0.9985191}
-  m_LocalPosition: {x: -0.0000038146973, y: 0.00000012479722, z: 0.0000001359731}
+  m_LocalRotation: {x: -0.046461012, y: 0.0217282, z: -0.018133102, w: 0.9985191}
+  m_LocalPosition: {x: 0.000004887581, y: -0.0000015348196, z: -0.0000016763806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1354,7 +1353,7 @@ Transform:
   m_GameObject: {fileID: 1600718857}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6789537, y: 0.012989458, z: 0.014170318}
+  m_LocalPosition: {x: -0.67894983, y: 0.0129903555, z: 0.014171243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1623,12 +1622,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!81 &2095182434
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1696,8 +1695,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095182431}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3625198, y: 0.003953235, z: -0.0015377443, w: 0.9319664}
-  m_LocalPosition: {x: 44.768196, y: 13, z: -42.849567}
+  m_LocalRotation: {x: 0.35512468, y: 0.18732333, z: -0.07286573, w: 0.9129551}
+  m_LocalPosition: {x: 40.14454, y: 13, z: -41.880413}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1721,7 +1720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2129463105
 MonoBehaviour:
   m_ObjectHideFlags: 0
