@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:GroupBox style="padding-top: 85px; padding-right: 160px; padding-bottom: 136px; padding-left: 160px; align-items: stretch; justify-content: center; height: 529px; align-self: auto; border-bottom-width: -16px; bottom: auto; left: auto; flex-basis: auto; width: auto;">
+        <ui:Label tabindex="-1" text="TOWER DEFENSE GAME" parse-escape-sequences="true" display-tooltip-when-elided="true" style="flex-direction: column; align-items: center; justify-content: center; -unity-text-align: upper-center; margin-bottom: 97px; font-size: 31px; color: rgb(255, 255, 255);" />
+        <ui:Button text="START GAME" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+        <ui:Button text="INSTRUCTIONS" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+        <ui:Button text="CLOSE GAME" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+    </ui:GroupBox>
+</ui:UXML>
